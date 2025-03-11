@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        public class PasswordValidator {
+         class PasswordValidator {
             public static void main(String[] args) {
                 Scanner scanner = new Scanner(System.in);
                 System.out.print("Enter your password: ");
