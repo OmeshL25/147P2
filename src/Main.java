@@ -10,7 +10,7 @@ import java.util.Scanner;
                 System.out.print("Enter your password: ");
                 String password = scanner.nextLine();
 
-
+            /** Prints a password requirement*/
                 if (isValidPassword(password)) {
                     System.out.println("Password is strong.");
                 } else {
@@ -21,7 +21,9 @@ import java.util.Scanner;
                 scanner.close();
             }
 
-
+            /** Check the password for effecitvity
+             * @param  takes String for password
+             * */
             public static boolean isValidPassword(String password) {
                 if (password.length() < 8) {
                     return false; // Must be at least 8 characters
