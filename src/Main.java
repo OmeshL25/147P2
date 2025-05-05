@@ -1,54 +1,24 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/** Check the password for effecitvity
+ * @param  takes String for password
+ * */
 import java.util.Scanner;
-
-
 
          public class Main {
             public static void main(String[] args) {
-                Scanner scanner = new Scanner(System.in);
-                System.out.print("Enter your password: ");
-                String password = scanner.nextLine();
-
-            /** Prints a password requirement*/
-                if (isValidPassword(password)) {
-                    System.out.println("Password is strong.");
-                } else {
-                    System.out.println("Password does not meet the required conditions.");
-                }
-
-
-                scanner.close();
+                Scanner input = new Scanner(System.in);
+                int choice=6;
+                // call at end?? calculation order = new calculation();
+            while (choice!=0){
+                System.out.println("...");
+                System.out.print("Pick a menu: 1. Drinks 2. Main Course");
+                choice=input.nextInt();
             }
 
-            /** Check the password for effecitvity
-             * @param  takes String for password
-             * */
-            public static boolean isValidPassword(String password) {
-                if (password.length() < 8) {
-                    return false; // Must be at least 8 characters
-                }
 
 
-                boolean hasDigit = false;
-                boolean hasSpecialChar = false;
-                String specialCharacters = "!@#$%^&*()_+-=[]{};:'\"\\|,.<>?/";
 
-
-                for (char ch : password.toCharArray()) {
-                    if (Character.isDigit(ch)) {
-                        hasDigit = true;
-                    }
-                    if (specialCharacters.indexOf(ch) != -1) {
-                        hasSpecialChar = true;
-                    }
-                    if (hasDigit && hasSpecialChar) {
-                        return true; // If both conditions are met, no need to check further
-                    }
-                }
-
-
-                return false;
             }
         }
 
