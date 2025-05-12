@@ -5,8 +5,10 @@ public class calculation {
     /** Calculate total, while using this for requirement
      * @param  double for price
      * */
-    public calculation(double price){
+    public calculation(){
         this.total=0.0;
+    }
+    public void addItem(double price){
         total+=price;
     }
     public double calculateTotal(){
