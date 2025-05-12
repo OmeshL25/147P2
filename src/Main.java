@@ -48,7 +48,10 @@ import java.util.Scanner;
                         price.addItem(20.99);
                     }
                         break;
-                    case 3:
+                    case 0:
+                        System.out.println("Do you want to add a tip? Enter the amount or 0 for no tip:");
+                        double tip = input.nextDouble();
+                        System.out.println("Total Price (including tax and tip): $" + price.calculateTotal(tip));
                         break;
                     default:
                         System.out.println("...");}
