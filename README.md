@@ -16,3 +16,6 @@ JavaDocs are used in the project to create professional, easy-to-read documentat
 
 
 This program streamlines the entire restaurant experience by transforming slow, error-prone order-taking into a few simple keystrokes. Instead of flipping through a paper menu or manually jotting down each price, the server (or customer) selects items directly from on-screen “Drinks” and “Main Course” menus, instantly adding their costs to a running subtotal. When the meal is finished, you’re immediately prompted for the tip, and with one final calculation the system outputs the exact total—including tax and tip—eliminating any guesswork or mental math. By automating these steps, the program not only speeds up the ordering process but also ensures the checkout is fast, accurate, and stress-free for both guests and staff alike.
+
+UML
+
